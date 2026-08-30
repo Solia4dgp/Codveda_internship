@@ -1,3 +1,5 @@
+# Task 3: Array Formulas & Dynamic Array
+
 ## Objective
 - Use SEQUENCE, UNIQUE, SORT, FILTER for data automation.
 - Apply TRANSPOSE to rearrange datasets.
