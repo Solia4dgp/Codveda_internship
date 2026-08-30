@@ -3,13 +3,13 @@
 - Use INDEX-MATCH for flexible lookups.
 - Implement INDIRECT for dynamic referencing.
 - Use OFFSET for dynamic range selection.
-
+---
 ## Data Preparation & Excel Techniques
 - Data Transformation: Extracted time and date information from the timestamp column.
 - Data Cleaning: Removed irrelevant columns to improve dataset usability.
 - Lookup Preparation: Transposed data to facilitate the HLOOKUP operation.
 - Interactive Excel Features: Used Data Validation to create a dropdown selection for dynamic filtering.
-
+---
 ## Excel Functions Applied
 - VLOOKUP: Retrieved corresponding information based on a selected IDs.
 - HLOOKUP: Retrieved information from the transposed dataset using horizontal lookup.
@@ -17,16 +17,17 @@
 - INDEX-MATCH: Used INDEX with MATCH to perform flexible lookups based on matching IDs.
 - INDIRECT: Created dynamic cell/range references based on selected values.
 - OFFSET: Dynamically returned a range of cells based on a matched ID and specified row/column offsets.
-
+---
 ## Interactive Features
 - Created a Data Validation dropdown for selecting customer IDs.
 - Linked the selected IDs to dynamic lookup formulas.
 - Used the dropdown to allow users to retrieve different information without manually changing formulas.
-
+---
 ## Key Outcome
 The task demonstrated how Excel lookup and reference functions can be combined with data preparation and interactive 
 features to create a more dynamic and user-friendly analysis.
 
+---
 ## Skills Demonstrated
 - Excel lookup & reference functions
 - Data cleaning
@@ -37,7 +38,7 @@ features to create a more dynamic and user-friendly analysis.
 - Formula-based analysis
 
 To view the dataset [Advanced_Lookup](https://docs.google.com/spreadsheets/d/19GGVDOwSbEkFQ1pKN3fRGVR7VWTdsyZu/edit?usp=drive_link&ouid=102712416489497756938&rtpof=true&sd=true)
-
+---
 ## Screenshots
 ### Vlookup
 <img width="500" height="495" alt="Vlookup" src="https://github.com/user-attachments/assets/d5bf88e1-07e0-4ca4-9909-1f55de99d24e" />
@@ -63,6 +64,10 @@ Started with a basic OFFSET formula and then developed a more advanced version u
 
 <img width="496" height="495" alt="Offset 1" src="https://github.com/user-attachments/assets/004cd1b7-e5be-4fa3-939e-9f5afd0c467c" />
 <img width="456" height="358" alt="Offset 2" src="https://github.com/user-attachments/assets/3d2edb46-ca91-458f-8616-f2528ae8bc4e" />
+---
+
+## Linkedin Post
+Check out on my [LinkedIn post](https://www.linkedin.com/posts/aileru-solia-471407285_dataanalysis-internship-learninginpublic-activity-7494735239651565568-gfwZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEVLMdUBDlhp6fhuqXMKrvomaXej1w4FXQI) to see how I approached this task and the Excel techniques I explored.
 
 
 
