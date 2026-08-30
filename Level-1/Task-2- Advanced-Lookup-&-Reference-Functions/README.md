@@ -52,16 +52,14 @@ To view the dataset [Advanced_Lookup](https://docs.google.com/spreadsheets/d/19G
 <img width="524" height="493" alt="Inde-match" src="https://github.com/user-attachments/assets/e54c3bcd-b3eb-4a3d-809b-f03f1c8f4d2e" />
 
 ### Indirect
-I first created a simple indirect function and creating a more complicated version by using data validation to create
-a dynamic cell
+Started with a basic INDIRECT formula and then developed a more advanced version using Data Validation for dynamic referencing.
 
 <img width="544" height="508" alt="Indirect 1" src="https://github.com/user-attachments/assets/0a657000-3ad5-4a2e-ad3c-edce7b5f3c7d" />
 <img width="396" height="282" alt="Indirect 2" src="https://github.com/user-attachments/assets/3beb3b3f-69d8-4436-a210-a8f73ee8fb22" />
 <img width="465" height="355" alt="Indirect 3" src="https://github.com/user-attachments/assets/6e10f877-953f-4cf0-9811-2261b2faf770" />
 
 ### Offset
-I first created a simple offset function and creating a more complicated version by using data validation to create
-a dynamic cell
+Started with a basic OFFSET formula and then developed a more advanced version using Data Validation for dynamic referencing.
 
 <img width="496" height="495" alt="Offset 1" src="https://github.com/user-attachments/assets/004cd1b7-e5be-4fa3-939e-9f5afd0c467c" />
 <img width="456" height="358" alt="Offset 2" src="https://github.com/user-attachments/assets/3d2edb46-ca91-458f-8616-f2528ae8bc4e" />
