@@ -12,14 +12,16 @@
 
 ## Excel Functions Applied
 ```excel
- =TRIM(CLEAN(Table1[@*Column_name*]))
+ =TRIM(CLEAN(Table1[@Column_name]))
 ```
-It was used to derive the text, platform, sentiment, country and user column 
+It was used to clean the text, platform, sentiment, country and user column 
 ```excel
 =SUBSTITUTE(TRIM(CLEAN(Table1[@Hashtags]))," #",", #")
 ```
 It was used to clean and substitute the hashtag column
 
+
+## Dataset
 To view the [dataset](https://docs.google.com/spreadsheets/d/18Bs1UUJZBMIhIHGMsE7C_kT5wNTlJRvV/edit?usp=drive_link&ouid=102712416489497756938&rtpof=true&sd=true)
 
 ### Key Learning
