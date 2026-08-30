@@ -28,10 +28,10 @@ The task demonstrated how Excel lookup and reference functions can be combined w
 features to create a more dynamic and user-friendly analysis.
 
 # Skills Demonstrated
-Excel Lookup & Reference Functions
-Data Cleaning
-Data Transformation
-Dynamic Referencing
-Interactive Excel
-Data Validation
-Formula-Based Analysis
+- Excel lookup & reference functions
+- Data cleaning
+- Data transformation
+- Dynamic referencing
+- Interactive excel
+- Data validation
+- Formula-based analysis
