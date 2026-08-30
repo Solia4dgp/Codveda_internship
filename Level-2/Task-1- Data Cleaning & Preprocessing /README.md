@@ -1,3 +1,5 @@
+# Task 1: Data Cleaning & Preprocessing
+
 ## Objective 
 * Remove duplicates and blank values.
 * Use TRIM, CLEAN, SUBSTITUTE to standardize text.
