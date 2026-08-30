@@ -30,7 +30,7 @@ The internship focused on applying Excel's data analysis, lookup, dynamic array,
 
 ## 📁 Repository Structure
 
-Each internship level contains two tasks. Every task folder contains the relevant dataset, Excel workbook, screenshots, and documentation.
+Each internship level contains two tasks. Every task folder contains the relevant dataset, screenshots and documentation.
 
 ## 🎯 Objective
 
