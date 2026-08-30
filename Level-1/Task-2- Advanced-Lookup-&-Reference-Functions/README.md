@@ -1,4 +1,6 @@
-# Objective
+# Task 2: Advanced Lookup & Reference Function
+
+## Objective
 - Master VLOOKUP, HLOOKUP, and XLOOKUP.
 - Use INDEX-MATCH for flexible lookups.
 - Implement INDIRECT for dynamic referencing.
