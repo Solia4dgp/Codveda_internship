@@ -91,7 +91,8 @@ COUNTROWS(CustomerData1)
 ```
 
 **Purpose:** Counts the total number of customer records.
-<img width="778" height="681" alt="image" src="https://github.com/user-attachments/assets/4bef9bf9-40c4-487f-be41-889d8bd8d51e" />
+
+<img width="398" height="231" alt="image" src="https://github.com/user-attachments/assets/98e1029a-8206-4379-8ac7-3ceac1719b29" />
 
 ### Churned Customers
 
@@ -104,8 +105,8 @@ CALCULATE(
 ```
 
 **Purpose:** Counts customers who churned.
-<img width="889" height="640" alt="image" src="https://github.com/user-attachments/assets/5c432858-1c8a-4f0b-a5f5-d5b966878b8a" />
 
+<img width="607" height="255" alt="image" src="https://github.com/user-attachments/assets/891307e7-c84f-4df3-952b-fa176cfcbf39" />
 
 ### Churn Rate
 
@@ -121,7 +122,8 @@ DIVIDE(
 The result was formatted as a percentage.
 
 **Purpose:** Measures the percentage of customers who churned.
-<img width="792" height="664" alt="image" src="https://github.com/user-attachments/assets/31663df8-2714-4ae2-8037-21c0359790c2" />
+
+<img width="409" height="247" alt="image" src="https://github.com/user-attachments/assets/5f494c07-960a-4086-ad51-3b47ca756bde" />
 
 ### Average Account Length
 
@@ -131,7 +133,8 @@ AVERAGE(CustomerData1[Account length])
 ```
 
 **Purpose:** Measures average customer tenure.
-<img width="780" height="663" alt="image" src="https://github.com/user-attachments/assets/3d9fedc3-c9eb-45f4-a85c-56d8d8cb8db6" />
+
+<img width="332" height="244" alt="image" src="https://github.com/user-attachments/assets/f71306ba-cf67-4832-b1ef-5a87cb61f9f2" />
 
 ### Average Total Usage
 
@@ -141,7 +144,8 @@ AVERAGE(CustomerData1[Total usage])
 ```
 
 **Purpose:** Measures average customer usage.
-<img width="788" height="662" alt="image" src="https://github.com/user-attachments/assets/342ab0d3-b690-44f5-b118-8dc0e309ef0b" />
+
+<img width="342" height="228" alt="image" src="https://github.com/user-attachments/assets/dd568dfe-edd4-4a1c-98cc-8546e3c325cb" />
 
 ---
 
@@ -224,12 +228,10 @@ The overall analysis identified several patterns in customer churn.
     The difference suggests that customer engagement and usage behavior may be useful signals when investigating churn.
 
 Business Insights Evidence
-
-
-
-
-
-
+- <img width="304" height="100" alt="image" src="https://github.com/user-attachments/assets/4e79d5ba-adac-4b6a-b981-57266b039401" />
+- <img width="303" height="199" alt="image" src="https://github.com/user-attachments/assets/5acaf377-4d63-4efd-9877-d1220aab3cf9" />
+- <img width="223" height="266" alt="image" src="https://github.com/user-attachments/assets/c6d4330d-2761-4178-a93c-3bb7c697e92a" />
+- <img width="309" height="99" alt="image" src="https://github.com/user-attachments/assets/cfd7f1cf-579f-45aa-aa61-1d590b27d149" />
 
 ---
 
