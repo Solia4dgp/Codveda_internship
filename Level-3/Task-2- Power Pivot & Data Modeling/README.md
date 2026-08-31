@@ -52,13 +52,8 @@ A separate **AreaCodeRegion** table was created containing distinct area codes a
 
 The two tables were connected through the **Area Code** field.
 
-```text
-CustomerData
-     │
-     │ Area Code
-     ▼
-AreaCodeRegion
-```
+<img width="446" height="526" alt="image" src="https://github.com/user-attachments/assets/1b273bca-f071-4735-92b7-afcf6fde2413" />
+
 
 This transformed the dataset from a flat table into a more structured **relational data model**.
 
@@ -72,16 +67,7 @@ Two calculated fields were created to support the analysis.
 
 Total Usage combines customer usage across day, evening, night and international services.
 
-```text
-Total Usage =
-Total Day Minutes
-+ Total Eve Minutes
-+ Total Night Minutes
-+ Total Intl Minutes
-```
 <img width="1593" height="127" alt="image" src="https://github.com/user-attachments/assets/c142e414-b83f-4b57-9f9d-a25a00af00f2" />
-
-
 
 ### Churn Flag
 
@@ -174,13 +160,7 @@ AVERAGE(CustomerData1[Total usage])
 | Average Account Length | Measures average customer tenure |
 | Average Total Usage    | Measures average customer usage  |
 
----
-
-## 📈 Key Results
-
-The analysis covered 3,333 customers.
 <img width="693" height="64" alt="image" src="https://github.com/user-attachments/assets/92541520-141e-450f-b8bc-1e529510e35f" />
-
 
 The overall churn rate was calculated as:
 
@@ -196,11 +176,7 @@ The overall churn rate was calculated as:
 
 Churn rates were relatively similar across the three regions:
 
-| Region      | Churn Rate |
-| ----------- | ---------: |
-| East Bay    |     14.88% |
-| Santa Clara |     14.56% |
-| Marin       |     14.26% |
+<img width="311" height="94" alt="image" src="https://github.com/user-attachments/assets/05b7bc2b-8f8e-48ab-bfcf-19dba1765619" />
 
 **Insight:** Regional location alone does not appear to be a major driver of customer attrition.
 
@@ -209,6 +185,9 @@ Churn rates were relatively similar across the three regions:
 ### 2. International Plan & Churn
 
 Customers with an International Plan showed a substantially higher churn rate.
+
+<img width="303" height="195" alt="image" src="https://github.com/user-attachments/assets/a82ae943-aa04-4c62-a865-0b225cf11944" />
+
 
 | International Plan | Churn Rate |
 | ------------------ | ---------: |
@@ -258,6 +237,8 @@ The analysis was extended beyond the required data model and DAX calculations by
 * Top 10 States by Churn Rate
 * Total Usage by Churn Status
 
+<img width="1378" height="612" alt="image" src="https://github.com/user-attachments/assets/960d7207-40f8-46dd-94f1-de823435e54d" />
+
 These visuals were used to explore customer behavior and identify potential churn patterns.
 
 ---
@@ -278,29 +259,18 @@ The analysis was designed to answer questions such as:
 
 ## 🛠️ Tools & Technologies
 
-* **Microsoft Excel**
-* **Power Query**
-* **Power Pivot**
-* **DAX**
-* **PivotTables**
-* **Slicers**
-* **Data Visualization**
+* Microsoft Excel
+* Power Query
+* Power Pivot
+* DAX
+* PivotTables
+* Slicers
+* Data Visualization
 
 ---
 
-## 👤 Author
-
-**Aileru Solia**
-
-Data Analyst | Business Administration Graduate
-
----
-
-## 🏷️ Tags
-
-`Excel` `PowerQuery` `PowerPivot` `DAX` `DataAnalysis` `CustomerChurn` `DataAnalytics` `BusinessIntelligence`
-
-task 6
+## Interactive KPI Metrics
+<img width="392" height="80" alt="image" src="https://github.com/user-attachments/assets/424e74f2-65f2-42e1-9cbc-0b5b9a44dde0" />
 
 
 ## Linkedin Post
