@@ -38,6 +38,8 @@ The internship focused on applying Excel's data analysis, lookup, dynamic array,
 
 Each internship level contains two tasks. Every task folder contains the relevant dataset and documentation.
 
+---
+
 ## 🎯 Objective
 
 The projects demonstrate my ability to use Excel to clean, transform, analyze, model and communicate insights from data.
