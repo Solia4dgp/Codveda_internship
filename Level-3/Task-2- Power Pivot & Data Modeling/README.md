@@ -4,12 +4,11 @@
 
 ## Project Overview
 
-This project analyzes **telecom customer churn** using Microsoft Excel, Power Pivot and DAX.
+For this task, I used Excel Power Pivot and DAX to transform telecom customer data into a relational data model and generate business insights into customer churn.
 
-The objective was to transform raw customer data into a **relational data model**, create calculated fields and DAX measures and develop interactive KPIs and visualizations to identify factors associated with customer churn.
+The analysis moved through the following workflow:
 
-The project was completed as part of my **Codveda Technologies Data Analysis (Excel) Internship**.
-
+Data Preparation → Relational Data Model → Calculated Columns → DAX Measures → PivotTables & Slicers → KPI Metrics → Business Insights
 ---
 
 ## 🎯 Objectives
@@ -38,19 +37,13 @@ To view the [dataset](https://docs.google.com/spreadsheets/d/1ZmPher_te-OKuEpOsW
 
 ---
 
-## 🔄 Data Preparation & Modeling
+## 🔄 Relational Data Model
 
-### 1. Customer Data
+I structured the customer data and created a separate AreaCodeRegion lookup table containing distinct area codes and their corresponding regions.
 
-The customer datasets were consolidated into a single **CustomerData** table before being loaded into the Excel Data Model.
+The two tables were connected through the Area Code field in Power Pivot.
 
-### 2. Area Code Region Table
-
-A separate **AreaCodeRegion** table was created containing distinct area codes and their corresponding regions.
-
-### 3. Power Pivot Relationship
-
-The two tables were connected through the **Area Code** field.
+This relationship allowed customer records to be analyzed according to their respective regions rather than keeping all information in one flat dataset.
 
 <img width="446" height="526" alt="image" src="https://github.com/user-attachments/assets/1b273bca-f071-4735-92b7-afcf6fde2413" />
 
@@ -61,7 +54,7 @@ This transformed the dataset from a flat table into a more structured **relation
 
 ## 🧮 Calculated Columns
 
-Two calculated fields were created to support the analysis.
+Calculated columns were created to prepare the data for further analysis.
 
 ### Total Usage
 
@@ -82,11 +75,13 @@ The Churn Flag converts the TRUE/FALSE churn status into a numeric value.
 
 This made churn easier to aggregate in calculations and analysis.
 
+These calculated fields provided a consistent basis for the subsequent DAX calculations.
+
 ---
 
 ## 📐 DAX Measures
 
-The following measures were created in Power Pivot.
+DAX measures were created in Power Pivot to calculate key customer and churn metrics.
 
 ### Total Customers
 
@@ -150,15 +145,24 @@ AVERAGE(CustomerData1[Total usage])
 
 ---
 
-## 📊 KPI Metrics
+## Pivot Table & Slicers
+The DAX measures were used in PivotTables to summarize customer churn and usage from different perspectives.
 
-| KPI                    | Purpose                          |
-| ---------------------- | -------------------------------- |
-| Total Customers        | Counts customer records          |
-| Churned Customers      | Counts customers who churned     |
-| Churn Rate             | Calculates percentage churn      |
-| Average Account Length | Measures average customer tenure |
-| Average Total Usage    | Measures average customer usage  |
+Slicers were added to make the analysis interactive and allow users to filter the results.
+
+<img width="392" height="80" alt="image" src="https://github.com/user-attachments/assets/424e74f2-65f2-42e1-9cbc-0b5b9a44dde0" />
+
+The interactive analysis made it possible to explore customer churn based on dimensions such as:
+
+Region
+State
+International Plan
+Churn status
+
+---
+
+## 📊 KPI Metrics
+The DAX measures were brought together into an interactive KPI view.
 
 <img width="693" height="64" alt="image" src="https://github.com/user-attachments/assets/92541520-141e-450f-b8bc-1e529510e35f" />
 
@@ -170,59 +174,62 @@ The overall churn rate was calculated as:
 
 ---
 
-## 🔍 Key Business Insights
+## 🔍 Key Business Insights 
+The overall analysis identified several patterns in customer churn.
 
-### 1. Churn by Region
+- Overall Churn
 
-Churn rates were relatively similar across the three regions:
+    There were 3,333 customers, of which 483 churned.
 
-<img width="311" height="94" alt="image" src="https://github.com/user-attachments/assets/05b7bc2b-8f8e-48ab-bfcf-19dba1765619" />
+    483 ÷ 3,333 × 100 = 14.49%
 
-**Insight:** Regional location alone does not appear to be a major driver of customer attrition.
+    The overall customer churn rate was therefore 14.49%.
 
----
+- Churn by Region
 
-### 2. International Plan & Churn
+    Churn rates were relatively similar across the three regions:
 
-Customers with an International Plan showed a substantially higher churn rate.
+    East Bay: 14.88%
+    Santa Clara: 14.56%
+    Marin: 14.26%
 
-<img width="303" height="195" alt="image" src="https://github.com/user-attachments/assets/a82ae943-aa04-4c62-a865-0b225cf11944" />
+    This suggests that region alone was not a major driver of customer attrition.
+
+- International Plan & Churn
+
+    Customers with an International Plan had a substantially higher churn rate:
+
+    Without International Plan: approximately 11.5%
+    With International Plan: approximately 42.4%
+
+    This makes International Plan enrollment an important factor for further investigation.
+
+- Highest-Churn States
+
+    The highest individual state churn rates included:
+
+    California: 26.47%
+    New Jersey: 26.47%
+    Texas: 25.00%
+    Maryland: 24.29%
+    
+    These states represent higher-risk customer segments where targeted retention strategies could be explored.
+
+- Total Usage by Churn
+
+    Retained customers accounted for: 1,665,857 total usage units
+    
+    Churned customers accounted for: 306,829 total usage units
+    
+    The difference suggests that customer engagement and usage behavior may be useful signals when investigating churn.
+
+Business Insights Evidence
 
 
-| International Plan | Churn Rate |
-| ------------------ | ---------: |
-| No                 |     ~11.5% |
-| Yes                |     ~42.4% |
 
-**Insight:** International Plan enrollment appears to be a strong indicator associated with customer churn and may warrant further investigation.
 
----
 
-### 3. Highest-Churn States
 
-The states with the highest churn rates included:
-
-| State      | Churn Rate |
-| ---------- | ---------: |
-| California |     26.47% |
-| New Jersey |     26.47% |
-| Texas      |     25.00% |
-| Maryland   |     24.29% |
-
-**Insight:** These states represent higher-risk customer segments and could be prioritized for targeted retention strategies.
-
----
-
-### 4. Total Usage by Churn
-
-Total usage was compared between retained and churned customers.
-
-| Churn Status | Total Usage |
-| ------------ | ----------: |
-| Retained     |   1,665,857 |
-| Churned      |     306,829 |
-
-**Insight:** Retained customers accounted for substantially more overall usage. This suggests that customer engagement and usage behavior may be useful signals when investigating churn.
 
 ---
 
@@ -268,9 +275,6 @@ The analysis was designed to answer questions such as:
 * Data Visualization
 
 ---
-
-## Interactive KPI Metrics
-<img width="392" height="80" alt="image" src="https://github.com/user-attachments/assets/424e74f2-65f2-42e1-9cbc-0b5b9a44dde0" />
 
 
 ## Linkedin Post
